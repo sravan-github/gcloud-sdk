@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'camil/gsutil:latest'
+            image 'ustcmirror/gsutil-rsync:latest'
             args '-u root:root'
         }
         }
