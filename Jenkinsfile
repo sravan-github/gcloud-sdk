@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'google/cloud-sdk:latest'
+            image 'camil/gsutil:latest'
             args '-u root:root'
         }
         }
