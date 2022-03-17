@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh 'gsutil --version'            
+        sh 'gsutil --version' 
+        sh 'ls -ltr'
       }
     }
   }
