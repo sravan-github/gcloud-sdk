@@ -12,7 +12,8 @@ pipeline {
         sh 'gsutil --version' 
         sh '''
             cd 
-            ls -ltr
+            whoami
+            pwd
             '''
       }
     }
