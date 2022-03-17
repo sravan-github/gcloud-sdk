@@ -15,7 +15,6 @@ pipeline {
             uname
             whoami
             pwd
-            yum update
             '''
       }
     }
