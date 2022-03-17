@@ -12,6 +12,7 @@ pipeline {
         sh 'gsutil --version' 
         sh '''
             cd 
+            uname
             whoami
             pwd
             '''
