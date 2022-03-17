@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'docker pull google/cloud-sdk:latest'
+            image 'google/cloud-sdk:latest'
             args '-u root:root'
         }
         }
