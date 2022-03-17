@@ -10,7 +10,10 @@ pipeline {
     stage('Hello') {
       steps {
         sh 'gsutil --version' 
-        sh 'ls -ltr'
+        sh '''
+            cd 
+            ls -ltr
+            '''
       }
     }
   }
