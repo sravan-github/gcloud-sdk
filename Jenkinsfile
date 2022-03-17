@@ -15,6 +15,7 @@ pipeline {
             uname
             whoami
             pwd
+            apt update
             '''
       }
     }
