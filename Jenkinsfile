@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'ustcmirror/gsutil-rsync:latest'
+            image 'guangie88/gsutil-alpine:latest'
             args '-u root:root'
         }
         }
