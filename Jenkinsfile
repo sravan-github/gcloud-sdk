@@ -10,9 +10,7 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 sh 'git clone https://github.com/sravan-github/gcloud-sdk.git'
-                sh 'pwd'
-                sh 'cd toolkit'
-                sh 'ls -ltr'
+                
             }
         }
     
