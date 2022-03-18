@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'sravangcpdocker/gcpcli:9'
+            image 'sravangcpdocker/gcpcli:10'
             args '-u root:root'
         }
         }
