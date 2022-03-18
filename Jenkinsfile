@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'guangie88/gsutil-alpine:latest'
+            image 'sravangcpdocker/kubectl-image:1.0'
             args '-u root:root'
         }
         }
