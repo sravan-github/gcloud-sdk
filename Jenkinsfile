@@ -15,7 +15,7 @@ pipeline {
             uname
             whoami
             pwd
-            yum --version
+            apt --version
             '''
       }
     }
