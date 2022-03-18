@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'gcr.io/google.com/cloudsdktool/google-cloud-cli:latest'
+            image 'sravangcpdocker/gcpcli:2'
             args '-u root:root'
         }
         }
