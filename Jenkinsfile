@@ -1,7 +1,7 @@
 pipeline {
   agent {
   docker { 
-            image 'sravangcpdocker/kubectl-image:1.0'
+            image 'sravangcpdocker/gcpcli:6'
             args '-u root:root'
         }
         }
