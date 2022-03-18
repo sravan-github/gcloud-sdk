@@ -1,20 +1,6 @@
-FROM ubuntu:18.04
-RUN apt-get update \
-     && apt-get install -y openjdk-11-jdk \
-        curl \
-        git \
-        net-tools \
-        iputils-ping \
-        wget \
-        python \
-        unzip \
-        ansible \
-        python-pip \
-        jq
-RUN pip install requests google-auth
-RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list \
-    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg |  apt-key --keyring /usr/share/keyrings/cloud.google.gpg add - \
-    apt-get update && apt-get install google-cloud-cli \
-    apt-get install google-cloud-cli-app-engine-java
+FROM sravangcpdocker/toolkit-test:2.0
+RUN apt-get install gcc python-dev python-setuptools libffi-dev
+RUN apt-get install python-pip
+RUN pip install gsutil
 
 CMD ["/bin/bash","-c","tail -f /dev/null"]
